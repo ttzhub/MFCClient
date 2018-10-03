@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CClient.h" />
     <ClInclude Include="MFCClient.h" />
     <ClInclude Include="MFCClientDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -190,6 +191,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CClient.cpp" />
     <ClCompile Include="MFCClient.cpp" />
     <ClCompile Include="MFCClientDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
