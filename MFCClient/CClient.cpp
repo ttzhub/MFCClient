@@ -41,5 +41,10 @@ void CClient::OnReceive(int nErrorCode)
 bool CClient::WChar2MByte(LPCWSTR srcBuff, LPSTR destBuff, int nlen)
 {
 	// TODO: 在此处添加实现代码.
-	return false;
+	int n = 0;
+	n = WideCharToMultiByte(CP_OEMCP, 0, srcBuff, -1, destBuff, 0, 0, FALSE);
+	if (n < nlen)	return FALSE;
+	WideCharToMultiByte(CP_OEMCP, 0, srcBuff, -1, destBuff, nlen, 0, FALSE);
+	return TRUE;
+	
 }
